@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+#introduction-container {
+    width: 57vw;
+}
+
+#container-content {
+    margin: 0 7vw;
+}
+
+#container-content h1 {
+    font-size: 4.5vw;
+    line-height: 7.5vh;
+    margin-bottom: 2vh;
+}
+
+#container-content p {
+    font-size: 1.5vw;
+    color: #4e4e4e;
+    margin-bottom: 3vh;
+}
+
+#list {
+    color: #4e4e4e;
+    font-size: 1.5vw;
+}
+
+#list li {
+    padding-bottom: 2vh;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+#list img {
+    width: 2vw;
+}
+
+#campgrounds-btn {
+    background-color: #000000;
+    border-radius: .5vw;
+    border: none;
+    color: #fff;
+    font-size: 1.4vw;
+    font-weight: 600;
+    padding: 3vh 2.5vw;
+    margin-bottom: 5vh;
+}
+
+.logo-container {
+    margin: 4vh 0 12vh 7vw;
+    transition: .5s;
+}
+
+.logo-container img {
+  width: 10vw;
+}
+
+#image-container {
+  width: 48vw;
+}
+
+.hide {
+  display: none;
+}
+
+#image-container #hero-image {
+  background-size: cover;
+  width: 46vw;
+  height: 100vh;
+}
+
+#partnered-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 7vw;
+}
+
+#airbnb {
+    width: 8vw;
+}
+
+#booking {
+    width: 12vw;
+}
+
+#plum-guide {
+    width: 16vw;
+}
+
+@media (max-width: 587px) {
+    .logo-container {
+        margin: 4vh 0 7vh 7vw;
+    }
+}
+
+@media (max-width: 770px) {
+    .logo-container {
+        margin: 4vh 0 7vh 7vw;
+    }
+}
