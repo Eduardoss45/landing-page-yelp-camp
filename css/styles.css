@@ -1,113 +1,231 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow: hidden;
 }
 
 #main-container {
-    display: flex;
-    justify-content: space-around;
-    height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 #introduction-container {
-    width: 57vw;
+  width: 57vw;
 }
 
-#container-content {
-    margin: 0 7vw;
-}
-
-#container-content h1 {
-    font-size: 4.5vw;
-    line-height: 7.5vh;
-    margin-bottom: 2vh;
-}
-
-#container-content p {
-    font-size: 1.5vw;
-    color: #4e4e4e;
-    margin-bottom: 3vh;
-}
-
-#list {
-    color: #4e4e4e;
-    font-size: 1.5vw;
-}
-
-#list li {
-    padding-bottom: 2vh;
-    display: flex;
-    gap: 1vw;
-    align-items: center;
-}
-
-#list img {
-    width: 2vw;
-}
-
-#campgrounds-btn {
-    background-color: #000000;
-    border-radius: .5vw;
-    border: none;
-    color: #fff;
-    font-size: 1.4vw;
-    font-weight: 600;
-    padding: 3vh 2.5vw;
-    margin-bottom: 5vh;
-}
-
-.logo-container {
-    margin: 4vh 0 12vh 7vw;
-    transition: .5s;
-}
-
-.logo-container img {
-  width: 10vw;
-}
-
-#image-container {
-  width: 48vw;
-}
-
-.hide {
+#image-container-tablet-mobile {
   display: none;
 }
 
-#image-container #hero-image {
-  background-size: cover;
+#container-content {
+  margin: 0 7vw;
+}
+
+#container-content h1 {
+  font-size: 4.5vw;
+  line-height: 7.5vh;
+  margin-bottom: 2vh;
+}
+
+#container-content p {
+  font-size: 1.5vw;
+  color: #4e4e4e;
+  margin-bottom: 3vh;
+}
+
+#list {
+  color: #4e4e4e;
+  font-size: 1.5vw;
+}
+
+#list li {
+  padding-bottom: 2vh;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+
+#list img {
+  width: 2vw;
+}
+
+#campgrounds-btn {
+  background-color: #000000;
+  border-radius: 0.5vw;
+  border: none;
+  color: #fff;
+  font-size: 1.4vw;
+  font-weight: 600;
+  padding: 3vh 2.5vw;
+  margin-bottom: 5vh;
+}
+
+#logo-container-desktop {
+  margin: 4vh 0 12vh 7vw;
+}
+
+#logo-container-desktop img {
+  width: 10vw;
+}
+
+#logo-container-tablet-mobile {
+  display: none;
+}
+
+#image-container {
+  width: 46vw;
+}
+
+#hero-image-desktop {
   width: 46vw;
   height: 100vh;
 }
 
+#hero-image-tablet {
+  width: 100vw;
+}
+
 #partnered-container {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 7vw;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 7vw;
 }
 
 #airbnb {
-    width: 8vw;
+  width: 8vw;
 }
 
 #booking {
-    width: 12vw;
+  width: 12vw;
 }
 
 #plum-guide {
-    width: 16vw;
+  width: 16vw;
 }
 
-@media (max-width: 587px) {
-    .logo-container {
-        margin: 4vh 0 7vh 7vw;
-    }
+#hero-image-mobile {
+  display: none;
 }
 
 @media (max-width: 770px) {
-    .logo-container {
-        margin: 4vh 0 7vh 7vw;
-    }
+  body {
+    overflow: auto;
+    overflow-x: hidden;
+  }
+
+  #main-container {
+    flex-direction: column-reverse;
+  }
+
+  #logo-container-desktop,
+  #hero-image-desktop {
+    display: none;
+  }
+
+  #hero-image-tablet,
+  #image-container-tablet-mobile,
+  #logo-container-tablet-mobile {
+    display: block;
+  }
+
+  #hero-image-tablet {
+    margin-bottom: 3vh;
+  }
+
+  #logo-container-tablet-mobile img {
+    margin: 6vw 6vw;
+  }
+
+  #introduction-container {
+    width: 100vw;
+  }
+
+  #container-content h1 {
+    font-size: 5.5vw;
+    line-height: 7.5vh;
+    margin: 0 20vw 2vh 0;
+  }
+
+  #campgrounds-btn {
+    padding: 2vh 4vw;
+  }
+}
+
+@media (max-width: 430px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #hero-image-tablet {
+    display: none;
+  }
+
+  #hero-image-mobile {
+    margin: 5vh 0;
+    width: 130vw;
+  }
+
+  #logo-container-tablet-mobile {
+    margin: 4vw 0 0 0;
+  }
+
+  #container-content h1 {
+    font-size: 10vw;
+    line-height: 6.5vh;
+    margin: 0 0 2vh 0;
+  }
+  
+  #container-content {
+    width: 100vw;
+  }
+  
+  #container-content p {
+    font-size: 5vw;
+    line-height: 4.5vh;
+  }
+  
+  #list {
+    color: #4e4e4e;
+    font-size: 5vw;
+  }
+
+  #list li {
+    padding-bottom: 4vh;
+    gap: 3vw;
+  }
+
+  #list img {
+    width: 6vw;
+  }
+
+  #airbnb {
+    width: 28vw;
+  }
+
+  #booking {
+    width: 36vw;
+  }
+
+  #plum-guide {
+    width: 46vw;
+  }
+
+  #campgrounds-btn {
+    padding: 3vh 9vw;
+    border-radius: 1vw;
+    font-size: 4vw;
+  }
+
+  #logo-container-tablet-mobile img {
+    margin: 3vh 0 0 26vw;
+  }
+
+  #hero-image-mobile {
+    display: block;
+  }
 }
